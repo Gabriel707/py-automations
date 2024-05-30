@@ -1,24 +1,25 @@
-
-
+from models.usuario import Usuario
 
 # 1. Obtenha o nome do usuário
-usuario = print(input(str('Nome e Sobrenome: ')))
 # 2. Obtenha a idade do usuário
-idade_usuario
-# 3. Registre de forma automática a data do cadastro do usuário, usando a data do registro como data de registro
 
+cliente_1 = Usuario('Gabriel', 'santana', 29)
+# 3. Registre de forma automática a data do cadastro do usuário, usando a data do registro como data de registro
+print(cliente_1._nome)
+print(cliente_1._sobrenome)
+print(cliente_1._idade)
 # 4. Para cada novo funcionário que é registrado na empresa, ele recebe um dos seguintes cartões, que é sorteado de forma aleatória:
 
 
-cartoes = ['R$50,00','R$250,00','R$120,00']
+cartoes = ['R$50,00', 'R$250,00', 'R$120,00']
 
 '''
 5. Guarde informações sobre a data de aniversário do funcionário(dd/mm/aaaa)
 '''
 
-## Módulo 2 - Gerar apresentação do usuário
+# Módulo 2 - Gerar apresentação do usuário
 
-### Funcionalidades do módulo 2 - Mensagem de boas vindas!
+# Funcionalidades do módulo 2 - Mensagem de boas vindas!
 '''
 Usando os dados obtidos no módulo 1, exiba as seguintes informações:
 
