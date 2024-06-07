@@ -1,7 +1,8 @@
 import datetime
+import random
 
 
-class Usuario():
+class Usuario:
 
     usuarios = []
 
@@ -9,8 +10,16 @@ class Usuario():
         self._nome = nome.title()
         self._sobrenome = sobrenome.title()
         self._idade = idade
+        self._creation_date = self.register_datetime()
+        self._coupon = self.assign_coupon()
         Usuario.usuarios.append(self)
 
-    ''''
-    Function to register a datetime of everyuser    
-    '''
+    def register_datetime(self):
+        return datetime.datetime.now()
+
+    def assign_coupon(self):
+        coupons = ['$50.00', '$250.00', '$120.00']
+        return random.choice(coupons)
+
+    def __str__(self):
+        return f"Olá: {self._nome} {self._sobrenome}, Idade: {self._idade}, seu registro foi concluído com sucesso no dia: {self._creation_date}, Parabéns, houve um sorteio e você ganhou um cartão de compras no valor de: {self._coupon}"
