@@ -25,7 +25,7 @@ resultado_put = requests.put(
     'https://jsonplaceholder.typicode.com/todos/2', tarefa_alterada)
 pprint(resultado_put.json())
 
-# DELETE
+# DELETE API
 
 resultado_delete = requests.delete(
     'https://jsonplaceholder.typicode.com/todos/2')
