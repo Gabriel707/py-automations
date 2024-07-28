@@ -5,4 +5,4 @@ for celular in celulares:
     for versao in versoes:
         print(f'{celular.title()} - {versao}')
 
-### Testing
+### Testing Loops
