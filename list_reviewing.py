@@ -16,3 +16,4 @@ lista_de_listas = [
 ]
 
 print(lista_de_listas[1][0])
+
