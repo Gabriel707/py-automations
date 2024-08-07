@@ -1,2 +1,2 @@
 idade = input('Digite sua idade')
-print(idade > 17)
+print(int(idade > 17))
